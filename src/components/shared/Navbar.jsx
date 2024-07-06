@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FaSearch } from "react-icons/fa";
+import { IoCartOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const navItems = [
@@ -72,7 +74,11 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-outline px-4 btn-primary">Appoinment</a>
+        <div className="flex space-x-3 items-center">
+          <IoCartOutline className="text-xl" />
+          <FaSearch className="text-xl" />
+          <a className="btn btn-outline px-4 btn-primary">Appoinment</a>
+        </div>
       </div>
     </div>
   );
