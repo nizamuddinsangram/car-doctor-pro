@@ -14,5 +14,20 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        carDoctorTheme: {
+          primary: "#1C1C22",
+          secondary: "#00FF00",
+          accent: "#FFFFFF",
+          neutral: "#E0E0E0",
+          "base-100": "#F5F5F5", // Updated background color
+        },
+      },
+      "dark",
+      "cupcake",
+    ],
+  },
 };
